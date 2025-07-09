@@ -232,7 +232,7 @@ def main():
     metrics_file.write('Epoch,Train Loss,Train Accuracy,Validation Loss,Validation Accuracy\n')
 
     # Nirvaan Note Network(The Triple N): TensorBoard for richer logging
-    writer = SummaryWriter()9
+    writer = SummaryWriter()
 
     # Nirvaan Note Network(The Triple N): early stopping setup
     best_val_acc = 0.0
