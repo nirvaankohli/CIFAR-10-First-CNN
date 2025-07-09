@@ -30,8 +30,15 @@ This repo tracks three versions:
 ## 🗂️ Repository Structure
 
 ```
-
-
+CIFAR-10-First-CNN/
+├── .gitignore
+├── Cifar10_V1.py
+├── Cifar10_V2.py
+├── Cifar10_V3.py
+├── V3_metrics.csv
+├── app.py
+├── modelV3.pth
+├── readme.md
 
 ````
 
