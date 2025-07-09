@@ -5,7 +5,7 @@ This repo tracks three versions:
 
 - **V1**: simple CNN → ~82 % test accuracy  
 - **V2**: deeper CNN + basic augmentations → ~87 % test accuracy  
-- **V3**: ResNet-18 + advanced augmentations, SWA & AMP → still training
+- **V3**: ResNet-18 + advanced augmentations, SWA & AMP → 92%
 
 ---
 
@@ -43,7 +43,7 @@ coming soon/replace
 |-------:|:---------------------------------------|:---------------------------------------------------------------------------------------------------------------|-------------:|
 | **V1** | 3-layer CNN                            | • No augmentation<br>• Standard SGD                                                                            | ~ 82 %       |
 | **V2** | Deeper CNN + BatchNorm + Dropout       | • RandomCrop + HorizontalFlip<br>• LR scheduling + weight decay                                                  | ~ 87 %       |
-| **V3** | ResNet-18 (adapted for 32×32)          | • RandomCrop(32,pad=4)<br>• RandomHorizontalFlip<br>• RandAugment (2 ops, mag=9)<br>• RandomErasing (p=0.2)<br>• MixUp (α=0.2) & CutMix (α=1.0,p=0.5)<br>• Label smoothing (0.1)<br>• CosineAnnealingLR + SWA (start @ epoch 40)<br>• AMP (mixed-precision) | **Training…**|
+| **V3** | ResNet-18 (adapted for 32×32)          | • RandomCrop(32,pad=4)<br>• RandomHorizontalFlip<br>• RandAugment (2 ops, mag=9)<br>• RandomErasing (p=0.2)<br>• MixUp (α=0.2) & CutMix (α=1.0,p=0.5)<br>• Label smoothing (0.1)<br>• CosineAnnealingLR + SWA (start @ epoch 40)<br>• AMP (mixed-precision) | 92%|
 
 ---
 
