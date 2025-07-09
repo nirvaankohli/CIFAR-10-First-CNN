@@ -22,6 +22,7 @@ class ResNet18CIFAR(nn.Module):
             stride=1,
             padding=1,
             bias=False
+            
         )
 
         self.backbone.maxpool = nn.Identity()
