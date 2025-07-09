@@ -16,13 +16,15 @@ class ResNet18CIFAR(nn.Module):
         self.backbone = models.resnet18(pretrained=False, num_classes=num_classes)
 
         self.backbone.conv1 = nn.Conv2d(
+
             in_channels=3,
+            
             out_channels=64,
             kernel_size=3,
             stride=1,
             padding=1,
             bias=False
-            
+
         )
 
         self.backbone.maxpool = nn.Identity()
